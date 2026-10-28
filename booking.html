@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <title>Booking Kost</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand flex-wrap sticky-top">
+            <section class="container gap-2">
+                <a class="navbar-brand" href="index.html">
+                    TeWoKost
+                </a>
+                <ul class="navbar-nav flex-wrap me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perbandingan.html">Bandingkan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favorit.html">Favorit</a>
+                    </li>
+                </ul>
+                <a href="loginpemilikkost.html" class="btn btn-brand btn-sm">Masuk Pemilik Kost</a>
+            </section>
+        </nav>
+        <div align="center">
+            <form action="input_form.html" method="get">
+                <table border="1" style="width: 600px;">
+                    <tr>
+                        <td colspan="3" align="center">
+                            <h1>Booking Kost</h1>
+                            <h2>Data Penyewa</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="200">Nama Kost</td>
+                        <td>:</td>
+                        <td>
+                            <select class="form-select">
+                                <option>Kost 1</option>
+                                <option>Kost 2</option>
+                                <option>Kost 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="nama" class="form-control" placeholder="Input nama lengkap anda">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Wa</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="noWa" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td>
+                            <input type="email" name="email" class="form-control" placeholder="name@example.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Masuk</td>
+                        <td>:</td>
+                        <td>
+                            <input type="date" name="tanggalMasuk" class="form-control" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <select name="gender" class="form-select">
+                                <option>Laki-laki</option>
+                                <option>Perempuan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lama Sewa</td>
+                        <td>:</td>
+                        <td>
+                            <select class="form-select">
+                                <option>1 bulan</option>
+                                <option>6 bulan</option>
+                                <option>12 bulan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Metode Pembayaran</td>
+                        <td>:</td>
+                        <td>
+                            <select class="form-select">
+                                <option>Transfer bank</option>
+                                <option>E-wallet</option>
+                                <option>Bayar di tempat</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Catatan Untuk Pemilik</td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="catatan" class="form-control" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input Bukti Pembayaran</td>
+                        <td>:</td>
+                        <td>
+                            <input type="file" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="btn btn-primary w-100">Booking</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
