@@ -1,14 +1,14 @@
 <html>
     <head>
-        <title>detail kost</title>
+        <title>Detail Kost</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
     </head>
 
     <body>
-        <nav class="navbar navbar-expand flex-wrap sticky-top">
+        <nav class="navbar navbar-expand flex-wrap sticky-top bg-body-tertiary border-bottom">
             <section class="container gap-2">
-                <a class="navbar-brand" href="index.html"> TeWoKost </a>
+                <a class="navbar-brand fw-bold" href="index.html">TeWoKost</a>
                 <ul class="navbar-nav flex-wrap me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="daftar-kost.html">Cari Kost</a>
@@ -20,8 +20,113 @@
                         <a class="nav-link" href="favorit.html">Favorit</a>
                     </li>
                 </ul>
-                <a href="loginpemilikkost.html" class="btn btn-brand btn-sm">Login Pemilik Kost</a>
+                <a href="loginpemilikkost.html" class="btn btn-outline-secondary btn-sm">Login Pemilik Kost</a>
             </section>
         </nav>
+
+        <main class="container py-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="daftar-kost.html">Daftar Kost</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kost Melati</li>
+                </ol>
+            </nav>
+
+            <section class="row g-4">
+                <article class="col-lg-8">
+                    <figure class="ratio ratio-16x9 m-0">
+                        <img src="images/kost-melati.png" class="rounded object-fit-cover" alt="Foto utama Kost Melati">
+                    </figure>
+
+                    <ul class="row g-2 list-unstyled mt-1">
+                        <li class="col-3"><img src="images/kost-melati-2.png" class="img-fluid rounded" alt="Foto 2"></li>
+                        <li class="col-3"><img src="images/kost-melati-3.png" class="img-fluid rounded" alt="Foto 3"></li>
+                        <li class="col-3"><img src="images/kost-melati-4.png" class="img-fluid rounded" alt="Foto 4"></li>
+                        <li class="col-3"><img src="images/kost-melati-5.png" class="img-fluid rounded" alt="Foto 5"></li>
+                    </ul>
+
+                    <h2 class="mt-4 mb-1">Kost Melati</h2>
+                    <p class="text-body-secondary">
+                        Dekat kampus, 5 menit jalan | Putri | Rating 4.8 (36 ulasan)
+                    </p>
+
+                    <h5 class="mt-4">Tentang kost</h5>
+                    <p>Kamar 3x4 meter dengan kasur, lemari, dan meja belajar. Lingkungan tenang, dekat warung makan dan halte. Jam malam pukul 22.00.</p>
+
+                    <h5>Fasilitas</h5>
+                    <ul>
+                        <li>AC</li>
+                        <li>WiFi</li>
+                        <li>Kamar mandi dalam</li>
+                        <li>Parkir motor</li>
+                        <li>Dapur bersama</li>
+                        <li>CCTV</li>
+                    </ul>
+
+                    <h5>Pemilik</h5>
+                    <p>
+                        <a href="halaman-pemilik.html">Bu Ratna</a>
+                        - membalas dalam 1 jam.
+                    </p>
+
+                    <h5 class="mt-4">Ulasan</h5>
+                    <article class="card mb-3">
+                        <section class="card-body">
+                            <h6 class="card-title">Sinta - 5/5</h6>
+                            <p class="card-text mb-0">Bersih, air lancar, ibu kost ramah.</p>
+                        </section>
+                    </article>
+                    <article class="card mb-3">
+                        <section class="card-body">
+                            <h6 class="card-title">Dewi - 4/5</h6>
+                            <p class="card-text mb-0">WiFi kadang lambat saat malam, selebihnya nyaman.</p>
+                        </section>
+                    </article>
+
+                    <form class="card">
+                        <section class="card-body">
+                            <h6 class="card-title">Tulis ulasan</h6>
+                            <label class="form-label">Rating</label>
+                            <select class="form-select mb-2">
+                                <option>5</option>
+                                <option>4</option>
+                                <option>3</option>
+                                <option>2</option>
+                                <option>1</option>
+                            </select>
+                            <label class="form-label">Ulasan</label>
+                            <textarea class="form-control mb-3" rows="3" placeholder="Ceritakan pengalamanmu"></textarea>
+                            <button type="button" class="btn btn-outline-secondary">Kirim Ulasan</button>
+                        </section>
+                    </form>
+                </article>
+
+                <aside class="col-lg-4">
+                    <section class="card sticky-top" style="top: 5rem;">
+                        <section class="card-body">
+                            <h4>Rp 850.000 <small class="fs-6 fw-normal text-body-secondary">/bulan</small></h4>
+                            <p class="text-body-secondary">2 kamar tersisa</p>
+
+                            <label class="form-label">Tanggal masuk</label>
+                            <input type="date" class="form-control mb-2">
+
+                            <label class="form-label">Lama sewa</label>
+                            <select class="form-select mb-3">
+                                <option>1 bulan</option>
+                                <option>6 bulan</option>
+                                <option>12 bulan</option>
+                            </select>
+
+                            <section class="d-grid gap-2">
+                                <a href="booking.html" class="btn btn-dark">Booking Sekarang</a>
+                                <a href="perbandingan.html" class="btn btn-outline-secondary">Bandingkan</a>
+                                <a href="favorit.html" class="btn btn-outline-secondary">Simpan ke Favorit</a>
+                            </section>
+                        </section>
+                    </section>
+                </aside>
+            </section>
+        </main>
     </body>
 </html>
