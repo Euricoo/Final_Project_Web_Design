@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Detail Kost2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand flex-wrap sticky-top bg-body-tertiary border-bottom">
+            <section class="container gap-2">
+                <a class="navbar-brand fw-bold" href="index.html">TeWoKost</a>
+                <ul class="navbar-nav flex-wrap me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="daftar-kost.html">Cari Kost</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perbandingan.html">Bandingkan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favorit.html">Favorit</a>
+                    </li>
+                </ul>
+                <a href="loginpemilikkost.html" class="btn btn-outline-secondary btn-sm">Login Pemilik Kost</a>
+            </section>
+        </nav>
+
+        <main class="container py-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="daftar-kost.html">Daftar Kost</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kost Cempaka</li>
+                </ol>
+            </nav>
+
+            <section class="row g-4">
+                <article class="col-lg-8">
+                    <figure class="ratio ratio-16x9 m-0">
+                        <img src="images/kost-cempaka.png" class="rounded object-fit-cover" alt="Foto utama Kost Cempaka">
+                    </figure>
+
+                    <ul class="row g-2 list-unstyled mt-1">
+                        <li class="col-3"><img src="images/kost-cempaka-2.png" class="img-fluid rounded" alt="Foto 2"></li>
+                        <li class="col-3"><img src="images/kost-cempaka-3.png" class="img-fluid rounded" alt="Foto 3"></li>
+                        <li class="col-3"><img src="images/kost-cempaka-4.png" class="img-fluid rounded" alt="Foto 4"></li>
+                        <li class="col-3"><img src="images/kost-cempaka-5.png" class="img-fluid rounded" alt="Foto 5"></li>
+                    </ul>
+
+                    <h2 class="mt-4 mb-1">Kost Cempaka</h2>
+                    <p class="text-body-secondary">
+                        Dekat kampus, 10 menit jalan | Putra | Rating 4.5 (28 ulasan)
+                    </p>
+
+                    <h5 class="mt-4">Tentang kost</h5>
+                    <p>Kamar 3x3 meter dengan kasur, lemari, dan meja belajar. Lingkungan aman dengan pagar dan gerbang otomatis. Jam malam pukul 23.00.</p>
+
+                    <h5>Fasilitas</h5>
+                    <ul>
+                        <li>WiFi</li>
+                        <li>Kipas angin</li>
+                        <li>Kamar mandi dalam</li>
+                        <li>Parkir motor</li>
+                        <li>Dapur bersama</li>
+                        <li>CCTV</li>
+                    </ul>
+
+                    <h5>Pemilik</h5>
+                    <p>
+                        <a href="halaman-pemilik.html">Pak Hendra</a>
+                        - membalas dalam 2 jam.
+                    </p>
+
+                    <h5 class="mt-4">Ulasan</h5>
+                    <article class="card mb-3">
+                        <section class="card-body">
+                            <h6 class="card-title">Rafi - 5/5</h6>
+                            <p class="card-text mb-0">Kamar luas, harga sesuai, pemilik responsif.</p>
+                        </section>
+                    </article>
+                    <article class="card mb-3">
+                        <section class="card-body">
+                            <h6 class="card-title">Dimas - 4/5</h6>
+                            <p class="card-text mb-0">Parkiran agak sempit kalau akhir pekan, selebihnya nyaman.</p>
+                        </section>
+                    </article>
+
+                    <form class="card">
+                        <section class="card-body">
+                            <h6 class="card-title">Tulis ulasan</h6>
+                            <label class="form-label">Rating</label>
+                            <select class="form-select mb-2">
+                                <option>5</option>
+                                <option>4</option>
+                                <option>3</option>
+                                <option>2</option>
+                                <option>1</option>
+                            </select>
+                            <label class="form-label">Ulasan</label>
+                            <textarea class="form-control mb-3" rows="3" placeholder="Ceritakan pengalamanmu"></textarea>
+                            <button type="button" class="btn btn-outline-secondary">Kirim Ulasan</button>
+                        </section>
+                    </form>
+                </article>
+
+                <aside class="col-lg-4">
+                    <section class="card sticky-top" style="top: 5rem;">
+                        <section class="card-body">
+                            <h4>Rp 750.000 <small class="fs-6 fw-normal text-body-secondary">/bulan</small></h4>
+                            <p class="text-body-secondary">Kamar penuh</p>
+
+                            <label class="form-label">Tanggal masuk</label>
+                            <input type="date" class="form-control mb-2">
+
+                            <label class="form-label">Lama sewa</label>
+                            <select class="form-select mb-3">
+                                <option>1 bulan</option>
+                                <option>6 bulan</option>
+                                <option>12 bulan</option>
+                            </select>
+
+                            <section class="d-grid gap-2">
+                                <a href="booking.html" class="btn btn-dark disabled" aria-disabled="true" tabindex="-1">Kamar Penuh</a>
+                                <a href="perbandingan.html" class="btn btn-outline-secondary">Bandingkan</a>
+                                <a href="favorit.html" class="btn btn-outline-secondary">Simpan ke Favorit</a>
+                            </section>
+                        </section>
+                    </section>
+                </aside>
+            </section>
+        </main>
+    </body>
+</html>
