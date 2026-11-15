@@ -1,0 +1,135 @@
+
+<html>
+    <head>
+        <title>Kos Chiko - TeWoKos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bangers&family=Permanent+Marker&family=Playfair+Display:ital,wght@1,900&family=Rubik+Mono+One&family=Special+Elite&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 class="text-center tw-logo" aria-label="TeWoKos"><span aria-hidden="true">T</span><span aria-hidden="true">e</span><span aria-hidden="true">W</span><span aria-hidden="true">o</span><span aria-hidden="true">K</span><span aria-hidden="true">o</span><span aria-hidden="true">s</span></h1>
+
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="peta_kos.html">Peta Kos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loginpemilikkos.html">Pemilik Kos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Menu</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="booking.html">Booking</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="favorit.html">Kos Favorit</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex gap-2" role="search" action="index.html#kos">
+                        <input class="form-control" type="search" name="q" placeholder="Cari kos" aria-label="Cari kos">
+                        <button class="btn btn-primary" type="submit">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container py-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Beranda</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Kos Chiko</li>
+                </ol>
+            </nav>
+            <div class="row g-4">
+                <article class="col-lg-8">
+                    <figure class="ratio ratio-16x9 m-0">
+                        <img src="images/kos-chiko.jpg" class="rounded object-fit-cover" alt="Foto utama Kos Chiko">
+                    </figure>
+                    <h2 class="mt-4 mb-1">Kos Chiko</h2>
+                    <p class="text-body-secondary">Bahu, Manado | Dekat pusat kota, 10 menit berkendara | Putra | Rating 4.8 (40 ulasan)</p>
+                    <h5>Tentang kos</h5>
+                    <p>Kamar 3x3 meter dengan kasur, lemari, dan meja belajar. Lingkungan aman dan nyaman. Jam malam pukul 23.00.</p>
+                    <h5>Fasilitas</h5>
+                    <ul>
+                        <li>WiFi</li>
+                        <li>AC</li>
+                        <li>Kamar mandi dalam</li>
+                        <li>Parkir motor</li>
+                        <li>Dapur bersama</li>
+                        <li>CCTV</li>
+                    </ul>
+                    <h5>Pemilik</h5>
+                    <p>Bu Ratna - membalas dalam 1 jam.</p>
+                    <h5>Ulasan</h5>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">Rafi - 5/5</h6>
+                            <p class="card-text mb-0">Kamar luas, harga sesuai, pemilik responsif.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">Dimas - 4/5</h6>
+                            <p class="card-text mb-0">Parkiran agak sempit kalau akhir pekan, selebihnya nyaman.</p>
+                        </div>
+                    </div>
+                    <form action="detail_kos10.html" class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Tulis ulasan</h6>
+                            <div class="mb-3">
+                                <label for="rating" class="form-label">Rating</label>
+                                <select id="rating" name="rating" class="form-select">
+                                    <option>5</option>
+                                    <option>4</option>
+                                    <option>3</option>
+                                    <option>2</option>
+                                    <option>1</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ulasan" class="form-label">Ulasan</label>
+                                <textarea id="ulasan" name="ulasan" class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary">Kirim Ulasan</button>
+                        </div>
+                    </form>
+                </article>
+                <aside class="col-lg-4">
+                    <div class="card sticky-top">
+                        <div class="card-body">
+                            <h4>
+                                Rp 1.100.000
+                                <small class="fs-6 fw-normal text-body-secondary">/bulan</small>
+                            </h4>
+                            <p class="text-body-secondary">2 kamar tersisa</p>
+                            <div class="d-grid gap-2">
+                                <a href="booking.html" class="btn btn-dark">Booking Sekarang</a>
+                                <a href="https://wa.me/62812345678010" class="btn btn-success" target="_blank" rel="noopener">Hubungi Pemilik (WhatsApp)</a>
+                                <a href="favorit.html" class="btn btn-outline-secondary">Simpan ke Favorit</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+    </body>
+</html>
